@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coders University</title>
+    <!-- carga css  -->
+   <link href="{% static 'css/style.css' %}" rel="stylesheet" media="all" type="text/css">
+    <!--<link rel="stylesheet" href="style.css">-->
+</head>
+
+<body>
+
+
+
+    <div class="containerAlimentacion">
+
+                            <h3>Alimentacion</h3>
+
+    </div>
+
+        <table border="1">
+            <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Marca</th>
+                <th>Fecha</th>
+                <th>Precio</th>
+                <th>Tipo</th>
+                <th>Imagen</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for i in producto %}
+            <tr>
+    <td>{{i.id}}</td>
+                <td>{{i.nombre}}</td>
+                <td>{{i.fecha}}</td>
+                <td>{{i.Producto.precio}}</td>
+                <td>{{i.Producto.tipo}}</td>
+                <td>{{i.foto}}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+    <br><br>
+
+
+
+
+
+
+
+    <a href="{% url 'enlaceJuguetes' %}"><button>Ir a Juguetes</button> </a>
+
+    <a href="{% url 'enlaceRopa' %}"><button>Ir a Ropa</button> </a>
+
+    <a href="{% url 'enlaceMenaje' %}"><button>Ir a Menaje</button> </a>
+
+</body>
+</html>

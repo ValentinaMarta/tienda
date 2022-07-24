@@ -1,0 +1,51 @@
+h1{
+background-color:red;
+     color: #FF0000;
+    text-align:center;
+}
+h2{
+text-align:center;
+button{
+align:center;
+}
+.titulo {
+    background-color:red;
+    }
+    button {
+        width:40%;
+        padding: 12px 20px;
+        border-radius: 8px;
+        background-color: white;
+        border-color: green;
+        font-size:20px;
+        color: #D4696C;
+        font-weight: bold;
+
+
+    }
+
+}
+.caja1{
+	width: 100px;
+	height: 100px;
+	position: absolute;/*con eso le decimos que ocupe solo el espacio que tiene y no toda la linea*/
+
+}
+.caja2{
+	width: 100px;
+	height: 100px;
+	margin-left:100px;
+	position: absolute;
+
+}
+.caja3{
+	width: 100px;
+	height: 100px;
+	margin-left:200px;/*Con esto ponemos la caja lo mas cerca posible de la ultima caja para luego poder subirla*/
+}
+.caja4{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+
+}

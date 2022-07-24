@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>tienda</title>
+  		<!-- carga css  -->
+   		<link href= "{% static 'css/style.css' %}" >
+	</head>
+
+	<body>
+			<div class="titulo">
+				<h1>Bienvenido a mi escaparate web</h1>
+			</div>
+
+			<div class="contenedor">
+				<div class="caja1">
+					<a href="{% url 'enlaceAlimentacion' %}"><button>Alimentacion</button></a>
+					<br><br>
+					<img src="{% static 'img/chuches.jpg' %}">
+
+				</div>
+
+				<div class="caja2">
+					<a href="{% url 'enlaceMenaje' %}"><button>Menaje</button> </a>
+					<br><br>
+					<img src="{% static 'img/menaje.jpg' %}">
+				</div>
+
+				<div class="caja3"><a href="{% url 'enlaceRopa' %}"><button>Ropa</button> </a>
+					<br><br>
+					<img src="{% static 'img/ropa.jpg' %}">
+				</div>
+
+				<div class="caja4">
+					<a href="{% url 'enlaceJuguetes' %}"><button>Juguetes</button> </a>
+					<br><br>
+					<img src="{% static 'img/juguetes.jpg' %}">
+				</div>
+			</div>
+	</body>
+</html>
